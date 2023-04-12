@@ -65,6 +65,9 @@ jobs:
           - target: skyconnect
             device: EFR32MG21A020F512IM32
             patchpath: "EmberZNet/SkyConnect"
+          - target: elelabs-elx0x3
+            device: EFR32MG13P632F512GM32
+            patchpath: "EmberZNet/Elelabs-ELx0x3"
     uses: ./.github/workflows/silabs-firmware-build.yaml
     with:
       image_name: ${{ needs.build-container.outputs.image_name }}
@@ -99,6 +102,10 @@ jobs:
             device: EFR32MG21A020F512IM32
             components: cpc_security_secondary_none
             patchpath: "RCPMultiPAN/SkyConnect"
+          - target: elelabs-elx0x3
+            device: EFR32MG13P632F512GM32
+            components: cpc_security_secondary_none
+            patchpath: "RCPMultiPAN/Elelabs-ELx0x3"
     uses: ./.github/workflows/silabs-firmware-build.yaml
     with:
       image_name: ${{ needs.build-container.outputs.image_name }}
@@ -126,6 +133,10 @@ jobs:
             device: EFR32MG21A020F512IM32
             components: bootloader_interface
             patchpath: "OpenThreadRCP/SkyConnect"
+          - target: elelabs-elx0x3
+            device: EFR32MG13P632F512GM32
+            components: bootloader_interface
+            patchpath: "OpenThreadRCP/Elelabs-ELx0x3"
     uses: ./.github/workflows/silabs-firmware-build.yaml
     with:
       image_name: ${{ needs.build-container.outputs.image_name }}
