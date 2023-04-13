@@ -1,5 +1,5 @@
---- config/sl_iostream_usart_vcom_config.h	2023-04-12 09:11:32.842570301 +0200
-+++ config/sl_iostream_usart_vcom_config.h	2023-04-12 09:12:12.358206238 +0200
+--- a/config/sl_iostream_usart_vcom_config.h	2023-04-12 09:11:32.842570301 +0200
++++ b/config/sl_iostream_usart_vcom_config.h	2023-04-12 09:12:12.358206238 +0200
 @@ -61,7 +61,7 @@
  // <usartHwFlowControlCtsAndRts=> CTS/RTS
  // <uartFlowControlSoftware=> Software Flow control (XON/XOFF)
