@@ -10,7 +10,7 @@ on:
       - OpenThreadRCP/
       - RCPMultiPAN/
     branches:
-      - main
+      - feature/elelabs-support
     tags:
       - '*'
 
